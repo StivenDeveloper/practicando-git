@@ -52,12 +52,13 @@ body{
 
 .nav-link{
     color: white;
+    text-decoration: none;
 }
 
 .nav-menu-item{
     font-size: 1.8rem;
     padding: 1rem;
-    margin: 0 1rem;
+    margin: 0 .1rem;
     line-height: 8rem;
     text-transform: uppercase;
     width: max-content;
@@ -68,7 +69,68 @@ body{
     border-radius: .5rem;
 }
 
-.nav-menu-link:hover{
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    padding: 0 2rem;
+    line-height: 6rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu-link:hover, .nav-menu-link_active{
     background-color: #034574;
     transition: 0.5s;
+}
+
+@media(max-width: 768px){
+    body{
+        padding-top: 7rem;
+    }
+    
+    .header{
+        height: 6rem;
+    }
+
+    .logo{
+        font-size: 2.5rem;
+        padding: 0 2rem;
+        line-height: 6rem;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right:2rem;
+        background-color: #2C3E50;
+        position: fixed;
+        left: 0;
+        top: 6rem;
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: 0.3s;
+    
+    }
+    
+    .nav-menu-item{
+        line-height: 7rem;
+    }
+    
+    .nav-menu-link:hover,.nav-menu-link_active{
+        background: none;
+        color: #83c5f7;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        display: block;
+    }
 }

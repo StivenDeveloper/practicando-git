@@ -7,16 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfcc67fa04.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">Logo</a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">#<a href="" class="nav-menu-link nav-link">Blog</a></li>
-                <li class="nav-menu-item">#<a href="" class="nav-menu-link nav-link">Vídeos</a></li>
-                <li class="nav-menu-item">#<a href="" class="nav-menu-link nav-link">Sobre mí</a></li>
-                <li class="nav-menu-item">#<a href="" class="nav-menu-link nav-link">Contacto</a></li>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Blog</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Vídeos</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Sobre mí</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
             </ul>
         </nav>
     </header>
